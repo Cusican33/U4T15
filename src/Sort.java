@@ -1,19 +1,28 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Sort {
 
     // PART A. implementing selection sort
     public static void selectionSort(int[] elements)
     {
-        for (int i = 0; i < elements.length - 1; i++)
+        for (int i = 0; i < elements.length; i++)
         {
             int temp = elements[i];
-            for (int j = i; j < elements.length; j++)
+            for (int j = i + 1; j < elements.length; j++)
             {
-                if (elements[j] < elements[i])
+                int min = elements[i];
+                int minIndex = i;
+                if (elements[j] < min)
                 {
-                    elements[i] = elements[j];
-                    elements[j] = temp;
+                    min = elements[j];
+                    minIndex = j;
+                }
+                System.out.println(Arrays.toString(elements));
+                if (j == elements.length - 1 && min < temp)
+                {
+                    elements[i] = min;
+                    elements[minIndex] = temp;
                 }
             }
         }
