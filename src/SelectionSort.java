@@ -1,7 +1,6 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class Sort {
+public class SelectionSort {
 
     // PART A. implementing selection sort
     public static void selectionSort(int[] elements)
