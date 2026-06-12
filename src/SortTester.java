@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class SortTester {
     public static void main(String[] args) {
-        System.out.println("--- PART A: TESTING SELECTION SORT --- ");
+     /*   System.out.println("--- PART A: TESTING SELECTION SORT --- ");
         int passed = 0;
         System.out.println("test 1: sorting list with 10 elements:");
         int[] arrA = {1, 10, 7, 3, 5, 2, 4, 9, 6, 8};
@@ -89,8 +89,8 @@ public class SortTester {
             System.out.println("----!!!!!!!TEST FAIL!!!!!!!----");
         }
         System.out.println("\nTESTS PASSED: " + passed + " OUT OF 5");
-        System.out.println("TESTS FAILED: " + (5 - passed) + " OUT OF 5");
-/*
+        System.out.println("TESTS FAILED: " + (5 - passed) + " OUT OF 5");*/
+
         System.out.println("\n--- PART B: TESTING SELECTION SORT ON WORD LIST --- ");
         ArrayList<String> allWords = new ArrayList<String>();
 
@@ -113,7 +113,7 @@ public class SortTester {
         } else {
             System.out.println("----!!!!!!!TEST FAIL!!!!!!!----");
         }
- */
+
     }
 
     // helper method to load words from words.txt
