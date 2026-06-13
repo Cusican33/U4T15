@@ -25,6 +25,7 @@ public class SelectionSort {
     // PART B. sorting a 1000-word list
     public static void selectionSortWordList(ArrayList<String> words)
     {
+        int count = 0;
         for (int i = 0; i < words.size(); i++)
         {
             String min = words.get(i);
@@ -36,9 +37,11 @@ public class SelectionSort {
                     min = words.get(j);
                     minIndex = j;
                 }
+                count++;
             }
             words.set(minIndex, words.get(i));
             words.set(i, min);
         }
+        System.out.println(count);
     }
 }

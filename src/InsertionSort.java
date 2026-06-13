@@ -5,6 +5,7 @@ public class InsertionSort {
     // PART A. implementing insertion sort
     public static void insertionSort(int[] elements)
     {
+        int count = 0;
         for (int i = 1; i < elements.length; i++)
         {
             int temp = elements[i];
@@ -13,9 +14,11 @@ public class InsertionSort {
             {
                 elements[j + 1] = elements[j];
                 j--;
+                count++;
             }
             elements[j + 1] = temp;
         }
+        System.out.println(count);
     }
 
     // PART B. sorting a word list
